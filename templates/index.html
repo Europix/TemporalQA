@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Temporal Answering</title>
+
+		<link rel="stylesheet" href="/static/css/index1.css" />
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+		<script type="text/javascript">
+            $(document).ready(function() {
+            $('#answer-btn').click(function() {
+                var question = $('#question-input').val();
+                $.ajax({
+                    url: '/getAnswer?question=' + question,
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function(result) {
+
+                        $('#answer-result').html(`<p><strong><font color="green" size="10">-----${result.fans}-----</font></strong></p>`);
+
+                        $('#answer-json').html(result.answer);
+
+                        $('#answer-keyword').html(result.keyword);
+
+                        if (result.type === 'implicit') {
+                    $('#answer-type').html(`<p><strong><font color="red" size="5">${result.type}</font></strong></p> <p><strong>Sub-Question:</strong> ${result.subq1}</p><strong>Sub-Question2:</strong> ${result.subq2}</p><br><p><strong>Sub-Question2 Answer:</strong> ${result.subans}</p>`);
+                }   else {
+                    $('#answer-type').html(`<p><strong><font color="red" size="5">${result.type}</font></strong></p> <p><strong>Sub-Question:</strong> ${result.subq1}</p>`);
+                }
+
+                        var dicHtml = '';
+                        result.dic.forEach(function(item) {
+                            dicHtml += `<p><strong> Entity: ${item[0]}</strong> <br> Start Year: ${item[1]} ———— End Year: ${item[2]} </p><br>`;
+                        });
+                        $('#answer-dict').html(dicHtml);
+                    },
+                    error: function(error) {
+                        console.log(error);
+                    }
+                });
+            });
+        });
+
+		</script>
+
+
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container">
+				<h2 class="logo">Temporal Question Answering System</h2>
+				<h4 class="project-by">Project by Zhishan Liu</h4>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="container">
+				<div class="search">
+					<div class="search-container">
+						<input type="text" id="question-input" class="search-input" placeholder="Ask a question" autocomplete="on" name="question">
+						<button class="search-btn" id="answer-btn">Answer</button>
+					</div>
+				</div>
+
+				<div class="answer">
+					<h2 class="answer-title">Final Answer:</h2>
+					<div id="answer-result"></div>
+
+					<h3 class="answer-type-title">Keyword:</h3>
+					<div id="answer-keyword"></div>
+
+					<h3 class="answer-type-title">Question Type:</h3>
+					<div id="answer-type"></div>
+
+					<h3 class="answer-dict-title">Answer Dictionary:</h3>
+					<div id="answer-dict"></div>
+
+                    <h3 class="answer-json-title">Answer JSON:</h3>
+					<div id="answer-json"></div>
+				</div>
+			</div>
+		</main>
+	</body>
+
+</html>

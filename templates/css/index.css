@@ -1,0 +1,355 @@
+
+.loading {
+	margin-top: 200px;
+	display: flax;
+	align: center;
+
+	
+}
+
+.loading p{
+	margin-top: 15px;
+	align: center;
+}
+
+.loadingImg{
+	margin: auto;
+    padding: 100px;
+    text-align: center;
+	align: center;
+}
+
+.que_color{
+	color: #337ab7;
+	font-size: 14px;
+	width: 100%;
+	display: inline;
+}
+hr{
+	margin:0px;
+	border-top: 1px solid #eee;
+}
+.bodyHeight{
+	height: 660px;
+}
+.footerAdd{
+	position: absolute;bottom: 0px;
+}
+#sub1Sparql hr{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border: 0;
+	border-top: 1px solid #eee;
+}
+dl {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+dt {
+    /*font-weight: 700;*/
+}
+dd, dt {
+	font-size: 14px;
+    line-height: 1.42857143;
+    margin-bottom: 10px;
+}
+dd {
+    margin-left: 0;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    /*font-weight: 700;*/
+}
+.select_row{
+	height:45px;
+}
+.answer_title
+{
+	font-size: 15px; 
+	font-weight:bold;
+	height:40px;
+	line-height:40px;
+	margin: 15px 0;
+}
+
+.starTip{
+	color: #5a98de;;
+	height: 24px;
+}
+.que_Title{
+	height: 35px;
+	font-size: 14px; 
+}
+.Que_Type{
+	text-decoration: underline;
+}
+.QueTypeCon  span{
+	color: #005FCC;
+}
+.QueTypeCon i{
+	margin-right: 10px;
+}
+.QueTypeCon{
+	display: none;
+	margin-left: 60px;
+	font-size: 14px;
+	height: 35px;
+}
+.subTitle{
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	background-color: #006DCC;
+	color: white;
+	text-align: center;
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+.tablefont  td{
+	font-size: 14px;
+}
+ .tablefont tr td:first-child{
+ 	font-weight: bold;
+ }
+ .conTip{
+ 	float:left;
+	width: 250px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	margin-right:5px;
+ }
+ .result-item {
+    box-sizing: border-box;
+    margin: 5px;
+    border: 2px solid;
+    padding: 3px 3px 3px 3px;
+    border-color: lightgrey;
+    text-align: center;
+    width: 150px;
+}
+.tablefont  td .ansdateLine{
+	width: 100%;
+	height: 70px;
+	line-height: 35px;
+	margin:5px 0px;
+	border-bottom: 1px solid #C0C0C0;
+}
+.tablefont  td .ansTitle{
+	float:left;
+	width: 65px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	margin:0px 5px;
+}
+
+.tablefont  td .datecon {
+	float:left;
+ }
+ .queansLine{
+	width: 100%;
+	/*border-bottom: 1px solid #C0C0C0;*/
+}
+.queans{
+	width: 100%;
+	height: 35px;
+	/*line-height: 35px;*/
+}
+.queansTitle{
+	float:left;
+	width: 120px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	margin-right:5px;
+}
+.queansCon{
+	float: left;
+	width: 100%;
+}
+.queansCon a{
+	/*color: rgb(90,152,222);*/
+	font-size:16px;
+	font-weight: bold;
+}
+.queansDes{
+	width: 100%;
+	font-size:14px;
+	margin-bottom:5px;
+	text-align:justify; 
+	text-justify:inter-ideograph;
+}
+.subqueCon{
+	float:left;
+	font-size: 14px;
+}
+.infoTip{
+	font-size: 16px;
+	line-height: 55px;
+	text-align: left;
+	width: 70%;
+	margin-top: 20px;
+}
+
+.Ans_Date_item{
+	width: 100%;
+	min-height: 40px;
+}
+.Ans_Date_Title{
+	float: left;
+	width: 30%;
+	font-size: 14px;
+	font-weight: bold;
+}
+.Ans_Date_Con{
+	float:left;
+	width: 70%;
+}
+.Ans_Date_line{
+	height: 50px;
+	line-height: 25px;
+}
+.Ans_Date_Predite{
+	float: left;
+	width: 65%;
+}
+.Ans_Date_Time{
+	float: left;
+	width: 35%;
+}
+.pagetip{
+	padding-top: 10px;
+	z-index: 10;
+}
+.pageBtn{
+	float: right;
+}
+.pagetip i{
+	font-size: 16px;
+}
+.tipTitle{
+	width: 100%;
+	font-size: 24px;
+	font-weight:500;
+	height: 60px;
+	line-height: 60px;
+	color: #333;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.tipCon{
+	width:100%;
+	font-size: 14px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color:#333;
+	word-break: keep-all;
+    word-wrap: break-word; 
+    text-align:justify; 
+    text-justify:inter-ideograph;
+}
+.tipTitle a,.tipCon a{
+	color: rgb(90,152,222);
+}
+.tipItemLine{
+	height: 30px;
+}
+.tipItem{
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+.tipItemTitle{
+	height: 35px;
+}
+.tipTtemCon{
+	margin-left: 30px;
+	height: 30px;
+}
+.tipItemchoice{
+	margin-left: 60px;
+	height: 30px;
+}
+
+.tipItemTitle i,.tipItemchoice i{
+	margin-right: 15px;
+}
+.tipChoice{
+	margin-left: 90px;
+}
+.rankTitle{
+	text-align: center;
+	border-radius: 5px;
+	margin-right: 8px;
+	margin-top: 10px;
+	float: right;
+	width: 80px;
+	height: 25px;
+	line-height: 25px;
+	background-color: rgb(180,179,177);
+	color: white;
+}
+.logoImg{
+	width:1000px;
+	margin: auto;
+	padding-top: 60px;
+	text-align: center;
+	align: center;
+}
+.logImgCurrent{
+	width:1000px;
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+	align: center;
+}
+.queInput{
+	width:100%;height: 36px; font-size:16px;  border: 1px solid #999;
+}
+.queInput:hover{
+	border: 1px solid #007AFF;
+}
+.que_Line{
+	color: #337ab7;
+	height: 35px;
+	line-height: 35px;
+	width: 100%;
+	display: inline;
+	text-decoration:none;
+}
+/*a:hover {text-decoration:none;}*/ 
+.Q_Tip{
+	height: 45px;
+	line-height: 45px;
+	width: 100%;
+	display: inline;
+	text-align: center;
+}
+.tempLine{
+	height: 30px;
+	line-height: 30px;
+}
+.tipLine{
+	margin: auto;
+	line-height: 30px;
+	font-size: 14px;
+}
+
+#answer-result {
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}

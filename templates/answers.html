@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Answer</title>
+</head>
+<body>
+            <div id="content">
+                <h1>Results:</h1>
+                Question Type: {{ json['type'] }}
+                <br>
+                Question Answer: {{ json['FINAL_ANS'] }}
+                <br>
+                {% if json['iflag'] == True %}
+                    Sub-Question after Decompose: {{ json['sub2'] }}
+                    Answer to Sub-Question: {{ json['subans'] }}
+                    Main Question after Decompose: {{ json['sub1'] }}
+                {% else %}
+                    Main Question after Decompose: {{ json['sub1'] }}
+                {% endif %}
+                Back-end QA answer: {{ json['resultdic'] }}
+            </div>
+</body>
+</html>
